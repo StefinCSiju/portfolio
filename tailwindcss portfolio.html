@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Colorful Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 right-0 z-10 bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">My Portfolio</h1>
+      <div class="space-x-6">
+        <a href="#home" class="hover:underline">Home</a>
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#projects" class="hover:underline">Projects</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="pt-24 pb-16 bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <img src="Stefin.jpg" alt="Profile" class="mx-auto rounded-full w-40 h-40 mb-6 shadow-xl border-4 border-white" />
+      <h2 class="text-3xl font-bold mb-2">Hi, I'm Stefin </h2>
+      <p class="text-gray-700 italic mb-4">"Designing experiences, not just websites."</p>
+      <a href="#" class="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-purple-600 hover:to-pink-600 text-white px-6 py-2 rounded-lg inline-block transition shadow-lg">Download Resume</a>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="py-16 bg-gradient-to-tr from-yellow-100 to-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8 text-center">About Me</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <p class="mb-4">
+            I'm a passionate web developer with a background in computer science. I enjoy building sleek, user-friendly websites and applications. I’m interested in UI/UX design, JavaScript frameworks, and accessibility. My goal is to contribute to impactful projects that make technology more human-centric.
+          </p>
+          <h3 class="text-xl font-semibold mb-2">Key Skills</h3>
+          <ul class="list-disc list-inside space-y-1">
+            <li>HTML, CSS, Tailwind CSS</li>
+            <li>JavaScript, React</li>
+            <li>Responsive Design</li>
+            <li>Version Control (Git)</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Education</h3>
+          <ul class="space-y-4">
+            <li class="bg-white p-4 rounded-lg shadow-md">
+              <p class="font-semibold"> Pursuing B.Tech in Computer Science</p>
+              <p class="text-sm text-gray-600">2024 - 2028</p>
+            </li>
+            <li class="bg-white p-4 rounded-lg shadow-md">
+              <p class="font-semibold">Higher Secondary School</p>
+              <p class="text-sm text-gray-600">2022 - 2024</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 bg-gradient-to-br from-pink-100 via-purple-100 to-blue-100">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8 text-center">Projects</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Project Card 1 -->
+        <div class="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition">
+          <img src="https://via.placeholder.com/300x200" alt="Project 1" class="rounded mb-4">
+          <h3 class="text-xl font-semibold mb-2">Project One</h3>
+          <p class="text-sm mb-2">A simple portfolio site with responsive design and clean UI.</p>
+          <p class="text-xs text-gray-600">Tools: HTML, Tailwind CSS</p>
+        </div>
+        <!-- Project Card 2 -->
+        <div class="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition">
+          <img src="https://via.placeholder.com/300x200" alt="Project 2" class="rounded mb-4">
+          <h3 class="text-xl font-semibold mb-2">Project Two</h3>
+          <p class="text-sm mb-2">A weather app that fetches real-time data using an API.</p>
+          <p class="text-xs text-gray-600">Tools: JS, OpenWeather API</p>
+        </div>
+        <!-- Project Card 3 -->
+        <div class="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition">
+          <img src="https://via.placeholder.com/300x200" alt="Project 3" class="rounded mb-4">
+          <h3 class="text-xl font-semibold mb-2">Project Three</h3>
+          <p class="text-sm mb-2">To-do app with task tracking, filtering and local storage.</p>
+          <p class="text-xs text-gray-600">Tools: HTML, CSS, JS</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-gradient-to-tr from-green-100 to-white text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+      <p>Interested in working together? Let's connect!</p>
+      <a href="mailto:example@example.com" class="inline-block mt-4 bg-gradient-to-r from-green-400 to-teal-500 hover:from-teal-600 hover:to-green-600 text-white px-6 py-2 rounded-lg transition shadow-md">Send Email</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-gray-800 to-gray-900 text-center py-4 text-sm text-white">
+    © 2025 Stefin. All rights reserved.
+  </footer>
+
+</body>
+</html>
